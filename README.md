@@ -5,7 +5,7 @@
 
 ### Desafio 3 - Criando um Relatório de Caracterização da base de dados Company
 
-## Consulta SQL para Mesclar Colaboradores e Nomes dos Gerentes
+#### Consulta SQL para Mesclar Colaboradores e Nomes dos Gerentes
 
 #### Este script SQL cria uma tabela que combina informações de colaboradores e seus respectivos gerentes.
 
@@ -32,4 +32,4 @@ LEFT JOIN
 ##### A mesclagem é essencial para criar um novo conjunto de dados que representa uma relação única entre departamento e localização, permitindo análises mais detalhadas.
 ##### A atribuição não se aplica aqui, pois não estamos apenas dando um valor, mas sim criando algo novo e significativo a partir da combinação de informações distintas.
 
-#### Desafio 4 Criar o Diagrama Dimensional – Star Schema
+### Desafio 4 - Criar o Diagrama Dimensional – Star Schema
