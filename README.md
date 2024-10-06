@@ -31,3 +31,5 @@ LEFT JOIN
 
 ##### A mesclagem é essencial para criar um novo conjunto de dados que representa uma relação única entre departamento e localização, permitindo análises mais detalhadas.
 ##### A atribuição não se aplica aqui, pois não estamos apenas dando um valor, mas sim criando algo novo e significativo a partir da combinação de informações distintas.
+
+#### Desafio 4 Criar o Diagrama Dimensional – Star Schema
