@@ -33,3 +33,46 @@ LEFT JOIN
 ##### A atribuição não se aplica aqui, pois não estamos apenas dando um valor, mas sim criando algo novo e significativo a partir da combinação de informações distintas.
 
 ### Desafio 4 - Criar o Diagrama Dimensional – Star Schema
+### Desafio 5 - Projeto Transformação de Dados com Dax no Power BI
+
+
+### Descrição do Projeto
+Este projeto consiste na construção de um modelo de dados no Power BI utilizando a tabela "Financial Sample" como base.
+O modelo foi desenvolvido seguindo a metodologia de star schema, 
+permitindo uma análise eficiente e intuitiva dos dados financeiros.
+
+Estrutura do Repositório:
+Arquivo do projeto Power BI: Transformacao-de-dados-Dax.pbix
+
+Imagem do Esquema em Estrela: 
+Diagrama que ilustra a estrutura do modelo de dados.
+#### Processo de Construção do Diagrama
+##### Importação de Dados:
+##### Iniciei importando a tabela "Financial Sample" para o Power BI.
+
+#### Criação de Tabelas Dimensão:
+
+###### Criei tabelas de dimensão, como D_Produtos, D_Descontos, D_Calendário, D_ Produtos_Detalhes e D_Detalhes, a partir da tabela original.
+###### Usei o Power Query para duplicar e transformar os dados, selecionando colunas relevantes e criando medidas necessárias.
+##### Criação da Tabela Fato:
+
+###### A tabela F_Vendas foi criada, incluindo as métricas essenciais para análise, como unidades vendidas e preço de vendas.
+
+##### Criação da Tabela de Calendário:
+###### Criei a tabela D_Calendário utilizando a função DAX CALENDAR:
+``D_Calendário = CALENDAR(MIN(financials_origem[Date]), MAX(financials_origem[Date]))``
+###### Isso permitiu gerar uma tabela de datas abrangendo todo o período das vendas registradas.
+##### Relacionamento entre Tabelas:
+
+###### Relacionei as tabelas de dimensão com a tabela fato, assegurando que o modelo seguisse a estrutura de star schema.
+##### Documentação do Esquema:
+
+###### Salvei uma imagem do esquema em estrela para facilitar a visualização e entendimento do modelo.
+#### Etapas e Funcionalidades
+#### Tabelas Criadas
+###### D_Produtos: Contém informações sobre produtos, incluindo medidas como média, mediana e valores máximos e mínimos de vendas.
+###### D_Descontos: Inclui dados sobre descontos aplicados aos produtos.
+###### D_Calendario: Criada com a função DAX CALENDAR, abrange todo o período das vendas registradas.
+###### F_Vendas: Tabela fato que consolida as métricas de vendas, como unidades vendidas, preço de vendas e lucro.
+###### D_Produtos_Detalhes: Contém os detalhes sobre os produtos
+###### D_Detalhes: Contem mais detalhes nao contempladas nas demais tabelas dimensão referntes ao detalhes sobre vendas.
