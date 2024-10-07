@@ -33,3 +33,8 @@ LEFT JOIN
 ##### A atribuição não se aplica aqui, pois não estamos apenas dando um valor, mas sim criando algo novo e significativo a partir da combinação de informações distintas.
 
 ### Desafio 4 - Criar o Diagrama Dimensional – Star Schema
+
+
+
+
+![modelo-transformacao-dados-dax](https://github.com/user-attachments/assets/d464b070-8ba8-49b3-85ec-692f9e059266)
